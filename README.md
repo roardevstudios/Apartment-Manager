@@ -1,6 +1,6 @@
 # Bytový prehľad
 
-A responsive Slovak property portfolio dashboard for tracking apartments, rent, monthly utility bills, and receipts.
+A responsive Slovak property portfolio dashboard with a dark default theme, local profiles, monthly utility bills, and receipts. It starts with an empty portfolio.
 
 ## Run locally
 
@@ -25,7 +25,7 @@ Build static production files with `npm run build`. The generated site is in `di
 
 This version stores properties, bills, and profiles in the browser's `localStorage`. Receipt files are not uploaded or stored; only the selected filename is recorded. The passcode is a convenience lock and is stored locally without encryption. Profiles share the same browser data and are not authenticated accounts. Do not store bank credentials, identity documents, or other highly sensitive information here. Use the JSON export for a manual backup. Clearing browser data removes this local workspace.
 
-The included Bratislava map and portfolio figures are illustrative sample content. Replace them with verified property locations and actual bills. Map pins are not address geocoding.
+The portfolio starts empty; all financial figures come from information entered by the owner or manager. The theme can be changed from the top bar.
 
 ## Slovak references
 
@@ -38,3 +38,4 @@ Reference figures and guidance are informational, not a property-specific bill e
 ## Stack
 
 React, Vite, Recharts, and Lucide icons.
+

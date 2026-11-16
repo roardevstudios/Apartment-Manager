@@ -16,16 +16,18 @@ One property owner uses the app to manage their property portfolio. Multiple loc
 
 ## Product Purpose
 
-Show the owner the location, income, costs, and operating status of apartments and properties in Slovakia. Make it easy to add and manage properties and keep monthly bills recorded.
+Show the owner income, costs, and operating status of apartments and properties in Slovakia. Make it easy to add and manage properties and keep monthly bills recorded. Start with an empty portfolio, a dark theme, and responsive layouts.
 
 ## Capabilities and Constraints
 
-- The owner can add and manage properties/apartments, review portfolio analytics, and see location and revenue/cost information.
+- The owner can add and manage properties/apartments, review portfolio analytics, and see address and revenue/cost information.
+- A theme switch in the top bar toggles between dark and light modes and uses the supplied Brightness icon.
+- Mobile layouts prioritize readable text and touch targets.
 - A manager records each month's utility and other property bills; bill records support an attachment such as an invoice or receipt.
 - The workspace supports multiple profiles and a passcode lock configurable in Settings.
 - Build a usable single-user browser app without assuming a hosted backend or account service. Clearly disclose where data is stored and the limits of client-side passcode protection.
 - Slovak context: euro currency and Slovak property terminology. Electricity bills vary by supplier, tariff, consumption, and fees; display uploaded/entered bills as actual costs and any regulator benchmarks as dated references rather than promises.
-- Demo portfolio information must be labeled as sample data and must not imply real properties or actual owner finances.
+- The application starts without demo properties, bills, or fabricated trends. Existing seeded demo records are removed while owner-entered records are retained.
 
 ## Evidence on Hand
 
@@ -40,3 +42,4 @@ Show the owner the location, income, costs, and operating status of apartments a
 - Treat each property as a managed place with an address and operating history.
 - Keep private workspace controls explicit about their scope.
 - Separate actual entered amounts from public estimates and guidance.
+

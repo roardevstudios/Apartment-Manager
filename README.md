@@ -37,6 +37,7 @@ Reference figures and guidance are informational, not a property-specific bill e
 
 ## Stack
 
-React and Vite, with Tabler icons displayed from the Iconstack hosted SVG API. Icon files are not stored in this repository; the browser loads them from Iconstack.
+React and Vite, with Tabler icons selected from the Iconstack catalog and displayed from the Tabler SVG CDN. Icon files are not stored in this repository; the browser loads them from the CDN.
+
 
 

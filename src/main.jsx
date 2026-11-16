@@ -4,7 +4,7 @@ import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YA
 import './styles.css';
 
 const iconFromStack = (id) => function IconstackIcon({ size = 18, className, style, ...props }) {
-  const src = `https://sglpxftkuzsqdpdhftwv.supabase.co/functions/v1/icon-svg?library=tabler&id=${id}&format=svg`;
+  const src = `https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/outline/${id}.svg`;
   return <img src={src} width={size} height={size} className={`iconstack-icon${className ? ` ${className}` : ''}`} style={style} alt="" aria-hidden="true" loading="lazy" {...props}/>;
 };
 const Activity = iconFromStack('activity');

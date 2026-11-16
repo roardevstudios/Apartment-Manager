@@ -37,5 +37,6 @@ Reference figures and guidance are informational, not a property-specific bill e
 
 ## Stack
 
-React, Vite, Recharts, and Lucide icons.
+React and Vite, with Tabler icons displayed from the Iconstack hosted SVG API. Icon files are not stored in this repository; the browser loads them from Iconstack.
+
 

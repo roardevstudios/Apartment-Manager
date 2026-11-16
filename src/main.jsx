@@ -1,8 +1,40 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { Activity, Bell, Building2, CalendarDays, Check, ChevronDown, ChevronLeft, ChevronRight, CircleHelp, FileCheck2, FilePlus2, Filter, Home, KeyRound, LayoutDashboard, LockKeyhole, MapPin, Menu, MoreHorizontal, Moon, Plus, Search, Settings, ShieldCheck, SlidersHorizontal, Upload, Wallet, X, Zap } from 'lucide-react';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import './styles.css';
+
+const iconFromStack = (id) => function IconstackIcon({ size = 18, className, style, ...props }) {
+  const src = `https://sglpxftkuzsqdpdhftwv.supabase.co/functions/v1/icon-svg?library=tabler&id=${id}&format=svg`;
+  return <img src={src} width={size} height={size} className={`iconstack-icon${className ? ` ${className}` : ''}`} style={style} alt="" aria-hidden="true" loading="lazy" {...props}/>;
+};
+const Activity = iconFromStack('activity');
+const Bell = iconFromStack('bell');
+const Building2 = iconFromStack('building');
+const CalendarDays = iconFromStack('calendar');
+const Check = iconFromStack('check');
+const ChevronDown = iconFromStack('chevron-down');
+const ChevronLeft = iconFromStack('chevron-left');
+const ChevronRight = iconFromStack('chevron-right');
+const CircleHelp = iconFromStack('help-circle');
+const FileCheck2 = iconFromStack('file-check');
+const FilePlus2 = iconFromStack('file-plus');
+const Filter = iconFromStack('filter');
+const KeyRound = iconFromStack('key');
+const LayoutDashboard = iconFromStack('layout-dashboard');
+const LockKeyhole = iconFromStack('lock');
+const MapPin = iconFromStack('map-pin');
+const Menu = iconFromStack('menu-2');
+const MoreHorizontal = iconFromStack('dots');
+const Moon = iconFromStack('moon');
+const Plus = iconFromStack('plus');
+const Search = iconFromStack('search');
+const Settings = iconFromStack('settings');
+const ShieldCheck = iconFromStack('shield-check');
+const SlidersHorizontal = iconFromStack('adjustments-horizontal');
+const Upload = iconFromStack('upload');
+const Wallet = iconFromStack('wallet');
+const X = iconFromStack('x');
+const Zap = iconFromStack('bolt');
 
 const demoPropertyIds = new Set(['p1', 'p2', 'p3', 'p4']);
 const demoBillIds = new Set(['b1', 'b2', 'b3', 'b4']);
